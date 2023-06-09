@@ -3,15 +3,13 @@ module.exports = {
   extends: [
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
-    'plugin:react-hooks/recommended',
-    "plugin:@tanstack/eslint-plugin-query/recommended"
+    'plugin:react-hooks/recommended'
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: { ecmaVersion: 'latest', sourceType: 'module' },
-  plugins: ['react-refresh', "@tanstack/query"],
+  plugins: ['react-refresh'],
   rules: {
     'react-refresh/only-export-components': 'warn',
-    "@tanstack/query/exhaustive-deps": "error",
-    "@tanstack/query/prefer-query-object-syntax": "error"
+    "@tanstack/query/exhaustive-deps": "error"
   },
 }
